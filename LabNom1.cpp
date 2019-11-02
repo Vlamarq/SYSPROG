@@ -1,0 +1,19 @@
+﻿#include <stdio.h>
+#include <math.h>
+#include <iostream>
+
+int main()
+{
+	float t, m, j, n, a, b, x, y, e;
+	m = 0.19;
+	j = 1.58;
+	a = 0.43;
+	b = 0.11;
+	x = 1.98;
+	t = 5 * m - 4 * cos(j + 5) - 2 / 3 - sqrt(12 * m);
+	n = 8 * sin(m + j) + pow(m + j, 2);
+	y = exp(x) * log(pow(x, 2) + b) * asin(b) / tan(3 * x) + pow(x, a / 3);
+	printf("t=%f,n=%f,y=%f  \n", t, n, y);
+	system("pause");
+	return 0;
+}
